@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Projects | Siti Faisal Portfolio</title>
+<meta content="Explore the creative works and technical projects of Siti Aisha binti Mohd Faisal." name="description"/>
+<!-- Fonts -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@600;700&amp;family=Inter:wght@400;600&amp;display=swap" rel="stylesheet"/>
+<!-- Icons -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Tailwind -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                "outline": "#7e7384",
+                "on-surface": "#201b13",
+                "surface-container-low": "#fef2e4",
+                "tertiary-fixed-dim": "#dac1be",
+                "secondary": "#944930",
+                "on-primary-container": "#d4a1ff",
+                "tertiary-container": "#554341",
+                "secondary-container": "#fe9d7f",
+                "on-secondary-fixed": "#3a0b00",
+                "inverse-surface": "#362f27",
+                "on-secondary-fixed-variant": "#76321c",
+                "on-tertiary-container": "#c9b0ae",
+                "primary-container": "#6a0dad",
+                "error": "#ba1a1a",
+                "primary-fixed-dim": "#dfb7ff",
+                "on-primary-fixed-variant": "#690bac",
+                "surface-bright": "#fff8f3",
+                "inverse-on-surface": "#fbefe2",
+                "surface-variant": "#ede1d4",
+                "surface": "#fff8f3",
+                "outline-variant": "#cfc2d5",
+                "on-tertiary-fixed-variant": "#544341",
+                "on-background": "#201b13",
+                "surface-dim": "#e4d8cb",
+                "tertiary-fixed": "#f7ddda",
+                "secondary-fixed-dim": "#ffb59e",
+                "error-container": "#ffdad6",
+                "surface-container-highest": "#ede1d4",
+                "on-surface-variant": "#4d4353",
+                "on-error-container": "#93000a",
+                "inverse-primary": "#dfb7ff",
+                "primary": "#4c0080",
+                "on-tertiary": "#ffffff",
+                "on-error": "#ffffff",
+                "background": "#fff8f3",
+                "on-secondary": "#ffffff",
+                "on-primary-fixed": "#2d004f",
+                "on-primary": "#ffffff",
+                "tertiary": "#3d2d2b",
+                "surface-tint": "#8333c6",
+                "surface-container-high": "#f2e6d9",
+                "surface-container": "#f8ecdf",
+                "primary-fixed": "#f1daff",
+                "on-secondary-container": "#77321c",
+                "surface-container-lowest": "#ffffff",
+                "secondary-fixed": "#ffdbd0",
+                "on-tertiary-fixed": "#261817"
+            },
+            "borderRadius": {
+                "DEFAULT": "0.25rem",
+                "lg": "0.5rem",
+                "xl": "0.75rem",
+                "full": "9999px"
+            },
+            "spacing": {
+                "margin-mobile": "20px",
+                "container-max": "1200px",
+                "gutter": "24px",
+                "margin-desktop": "64px",
+                "section-gap": "120px",
+                "base": "8px"
+            },
+            "fontFamily": {
+                "headline-lg": ["Plus Jakarta Sans"],
+                "headline-xl": ["Plus Jakarta Sans"],
+                "label-md": ["Inter"],
+                "body-lg": ["Inter"],
+                "headline-lg-mobile": ["Plus Jakarta Sans"],
+                "body-md": ["Inter"],
+                "headline-md": ["Plus Jakarta Sans"]
+            },
+            "fontSize": {
+                "headline-lg": ["48px", {"lineHeight": "1.2", "letterSpacing": "-0.01em", "fontWeight": "700"}],
+                "headline-xl": ["64px", {"lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                "label-md": ["14px", {"lineHeight": "1.2", "letterSpacing": "0.05em", "fontWeight": "600"}],
+                "body-lg": ["18px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                "headline-lg-mobile": ["32px", {"lineHeight": "1.2", "fontWeight": "700"}],
+                "body-md": ["16px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                "headline-md": ["32px", {"lineHeight": "1.3", "fontWeight": "600"}]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        body {
+            background-color: #F0E4D7; /* Sand Background */
+        }
+        .glass-card {
+            background: rgba(255, 255, 255, 0.4);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        .glass-card:hover {
+            border-color: rgba(106, 13, 173, 0.2);
+            box-shadow: 0 20px 40px -20px rgba(106, 13, 173, 0.1);
+            transform: translateY(-4px);
+        }
+        .btn-primary-gradient {
+            background: linear-gradient(135deg, #6a0dad 0%, #4c0080 100%);
+            position: relative;
+            overflow: hidden;
+        }
+        .btn-primary-gradient::after {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: linear-gradient(45deg, transparent, rgba(255,255,255,0.1), transparent);
+            transform: rotate(45deg);
+            transition: 0.5s;
+        }
+        .btn-primary-gradient:hover::after {
+            left: 100%;
+        }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+    </style>
+</head>
+<body class="font-body-md text-on-surface selection:bg-primary-container selection:text-white">
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full z-50 bg-white/30 backdrop-blur-xl border-b border-white/20 shadow-sm transition-all duration-300 ease-in-out">
+<div class="flex justify-between items-center max-w-[1200px] mx-auto px-margin-desktop h-20">
+<a class="font-headline-md text-headline-md font-bold text-primary" href="#">Siti Faisal</a>
+<div class="hidden md:flex items-center gap-8">
+<a class="text-on-surface-variant hover:text-primary transition-colors font-label-md text-label-md" href="#">About</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors font-label-md text-label-md" href="#">Skills</a>
+<a class="text-primary border-b-2 border-primary pb-1 font-label-md text-label-md" href="#">Projects</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors font-label-md text-label-md" href="#">Education</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors font-label-md text-label-md" href="#">Contact</a>
+</div>
+<button class="btn-primary-gradient px-6 py-2.5 rounded-full text-white font-label-md text-label-md shadow-md">
+                Hire Me
+            </button>
+</div>
+</nav>
+<main class="pt-32">
+<!-- Hero Section -->
+<section class="max-w-[1200px] mx-auto px-margin-desktop mb-24">
+<div class="max-w-3xl">
+<h1 class="font-headline-xl text-headline-xl text-primary mb-6 animate-in fade-in slide-in-from-bottom-4 duration-700">
+                    My Creative Works
+                </h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant leading-relaxed">
+                    A curated collection of projects where architectural precision meets human-centric design. I approach information management as a storyteller, ensuring complex data structures translate into seamless, intuitive user experiences that resonate and perform.
+                </p>
+</div>
+</section>
+<!-- Projects Grid -->
+<section class="max-w-[1200px] mx-auto px-margin-desktop pb-section-gap">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-gutter">
+<!-- Brew Purnama Café -->
+<div class="glass-card rounded-2xl overflow-hidden flex flex-col">
+<div class="h-64 w-full overflow-hidden relative">
+<div class="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent z-10"></div>
+<img class="w-full h-full object-cover transform hover:scale-105 transition-transform duration-700" data-alt="A cinematic, high-angle lifestyle shot of a modern minimalist cafe interior called Brew Purnama. The space features warm wooden furniture, soft ambient lighting reflecting off glass surfaces, and a sophisticated color palette of deep browns and warm peaches. The atmosphere is cozy and professional, emphasizing a blend of traditional warmth and modern design." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCdkpUN3QvYSSt75A2vBHhqlQ_5RgAPq3bs_NjxqA3Ix6DEF2c8g_K6Yh1khv9LDJTeYjN7Y5VbrJC0EFUbOIArY6Vz8n4-XjlgIcEY1foBnP46xb2mWMk1CCMqC4kxLzDCHIuXYX-v3B-qUQ23Kzf4tdHi8YJUViwUsTfL4sZkTD7fqLwLG21TABLo_cawEMeZMmuV9dFEDQFp_JHhKgO6h985wB6gPoGFnQEnhsGrQoOZrZtUohmRmr35GAdk22AiUT2rLx4n1E1f"/>
+</div>
+<div class="p-8 flex-grow flex flex-col">
+<div class="flex justify-between items-start mb-4">
+<h3 class="font-headline-md text-headline-md text-secondary">Brew Purnama Café</h3>
+<span class="bg-[#FFE4E1] text-primary px-3 py-1 rounded-full font-label-md text-label-md">UX/UI Design</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant mb-6 flex-grow">
+                            A comprehensive branding and digital presence for a specialty coffee house. This project focused on creating a seamless mobile ordering experience that captures the ethereal moonlight theme of the physical cafe.
+                        </p>
+<div class="flex flex-wrap gap-2 mb-8">
+<span class="bg-[#FFE4E1] text-primary px-3 py-1 rounded-lg text-xs font-semibold">HTML</span>
+<span class="bg-[#FFE4E1] text-primary px-3 py-1 rounded-lg text-xs font-semibold">Tailwind</span>
+<span class="bg-[#FFE4E1] text-primary px-3 py-1 rounded-lg text-xs font-semibold">Figma</span>
+</div>
+<button class="btn-primary-gradient w-full py-4 rounded-xl text-white font-label-md text-label-md flex items-center justify-center gap-2 group">
+                            View Case Study
+                            <span class="material-symbols-outlined text-sm group-hover:translate-x-1 transition-transform">arrow_forward</span>
+</button>
+</div>
+</div>
+<!-- Train Booking System -->
+<div class="glass-card rounded-2xl overflow-hidden flex flex-col">
+<div class="h-64 w-full overflow-hidden relative">
+<div class="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent z-10"></div>
+<img class="w-full h-full object-cover transform hover:scale-105 transition-transform duration-700" data-alt="A sleek, futuristic train dashboard interface displayed on a high-resolution tablet. The UI shows real-time schedules, seat mapping, and payment confirmation screens with glowing glassmorphism effects. The color scheme uses deep indigo and soft white highlights, reflecting a high-tech transportation management system." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBS5D4Uv1HVP2mludDw2jBAXm5hIxyT0d2qquXmG8_b49cINKEtCT5gihoPLr8Mf-S0rN59BZwXU95gCEk_a1iKhGYGKWd9akRQB7Ui1qLl8wuKpagNkeYIGA0dd8yln6sp_c6Oh3jKKKHq3oa1b5u17QRMYq_wNw9joVJfhov8u2XCZIYI0aRRuL5y9snRvHoVzyjPCb7LNEmOWUq1fszFscubda4Dr1v2K2H-WrAtu6l-oIlxD5S2KD42-5IBejTjrr5xIB-D-Cp2"/>
+</div>
+<div class="p-8 flex-grow flex flex-col">
+<div class="flex justify-between items-start mb-4">
+<h3 class="font-headline-md text-headline-md text-secondary">Train Booking System</h3>
+<span class="bg-[#FFE4E1] text-primary px-3 py-1 rounded-full font-label-md text-label-md">Software Engineering</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant mb-6 flex-grow">
+                            An efficient terminal-based and GUI application for managing high-volume railway reservations. Implemented complex algorithms for seat allocation and real-time inventory management with robust error handling.
+                        </p>
+<div class="flex flex-wrap gap-2 mb-8">
+<span class="bg-[#FFE4E1] text-primary px-3 py-1 rounded-lg text-xs font-semibold">C++</span>
+<span class="bg-[#FFE4E1] text-primary px-3 py-1 rounded-lg text-xs font-semibold">Data Structures</span>
+<span class="bg-[#FFE4E1] text-primary px-3 py-1 rounded-lg text-xs font-semibold">CLI</span>
+</div>
+<button class="btn-primary-gradient w-full py-4 rounded-xl text-white font-label-md text-label-md flex items-center justify-center gap-2 group">
+                            View Case Study
+                            <span class="material-symbols-outlined text-sm group-hover:translate-x-1 transition-transform">arrow_forward</span>
+</button>
+</div>
+</div>
+<!-- Racing Game -->
+<div class="glass-card rounded-2xl overflow-hidden flex flex-col">
+<div class="h-64 w-full overflow-hidden relative">
+<div class="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent z-10"></div>
+<img class="w-full h-full object-cover transform hover:scale-105 transition-transform duration-700" data-alt="Dynamic 2D racing game screenshot showing a vibrant neon-lit city track at night. A stylized sports car is captured in high speed with motion blur effects. The game UI features minimalist speedometers and lap timers, using a palette of electric purple and soft sand tones to maintain portfolio consistency." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBbFaT5zsqQ3gjhMgtl_yi2SUpTBlF6EO38O6C3hb6357TCuJstkKdliJoSL5sDWAyXch9FwQRmmI7IcOpFikkHNYKy7KVnHTPxUcbYTDSHnURDsYs8DxCWNEmundz5ksBN8THMSUOpbzZCTosbO7nz7pybdUJ_ETWL2oUFrWZ8kkxVR20-dzWf9mQNHn8HflxAugjBcq2d9x6pmQh1pH55FgYCeM4qAHHCEbzkKqHQYWSJm71elZAQmNXRSqX9MIKXDYRAp-_jrl5S"/>
+</div>
+<div class="p-8 flex-grow flex flex-col">
+<div class="flex justify-between items-start mb-4">
+<h3 class="font-headline-md text-headline-md text-secondary">Racing Game</h3>
+<span class="bg-[#FFE4E1] text-primary px-3 py-1 rounded-full font-label-md text-label-md">Game Development</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant mb-6 flex-grow">
+                            A high-octane 2D racing experience developed with a focus on physics-based mechanics and responsive controls. Featured custom-built collision detection and a modular level design system.
+                        </p>
+<div class="flex flex-wrap gap-2 mb-8">
+<span class="bg-[#FFE4E1] text-primary px-3 py-1 rounded-lg text-xs font-semibold">Logic</span>
+<span class="bg-[#FFE4E1] text-primary px-3 py-1 rounded-lg text-xs font-semibold">Animation</span>
+<span class="bg-[#FFE4E1] text-primary px-3 py-1 rounded-lg text-xs font-semibold">Physics Engine</span>
+</div>
+<button class="btn-primary-gradient w-full py-4 rounded-xl text-white font-label-md text-label-md flex items-center justify-center gap-2 group">
+                            View Case Study
+                            <span class="material-symbols-outlined text-sm group-hover:translate-x-1 transition-transform">arrow_forward</span>
+</button>
+</div>
+</div>
+<!-- Motion Graphic Video -->
+<div class="glass-card rounded-2xl overflow-hidden flex flex-col">
+<div class="h-64 w-full overflow-hidden relative">
+<div class="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent z-10"></div>
+<img class="w-full h-full object-cover transform hover:scale-105 transition-transform duration-700" data-alt="A stunning still from a motion graphics piece showing abstract fluid shapes in purple and gold floating in a white ethereal space. The composition follows the golden ratio, with soft shadows and glowing edges. The lighting is bright and editorial, reflecting a sophisticated brand identity reveal." src="https://lh3.googleusercontent.com/aida-public/AB6AXuA-3AGz9UZiwaRw3OW1i72y9cVclyjpcAEew1XxPF-tDuo5uxW19JMzwhjza6WeYg7VP5H4iJsKgK7H4KEFEZuCAXSAZkZeJ6lwVVT86DhSRLXw4c56LYjCEH_D3K1d_Bx996QeHb-RJBKh9bu7ZoN-bRzIWNBA3DeF8stAjOSNwth7KrhoCItLZniqgYENUU9xTvlr2rRPBN38Ojc973vyhj5vUCV1ojh6eABXbUxreoYeGQjnXRSRJAMNxE5sm50P3bXMIIct0Z5N"/>
+</div>
+<div class="p-8 flex-grow flex flex-col">
+<div class="flex justify-between items-start mb-4">
+<h3 class="font-headline-md text-headline-md text-secondary">Motion Graphic Video</h3>
+<span class="bg-[#FFE4E1] text-primary px-3 py-1 rounded-full font-label-md text-label-md">Multimedia</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant mb-6 flex-grow">
+                            An ethereal promotional video exploring the intersection of technology and human emotion. This piece utilizes liquid motion and kinetic typography to communicate brand values effectively.
+                        </p>
+<div class="flex flex-wrap gap-2 mb-8">
+<span class="bg-[#FFE4E1] text-primary px-3 py-1 rounded-lg text-xs font-semibold">After Effects</span>
+<span class="bg-[#FFE4E1] text-primary px-3 py-1 rounded-lg text-xs font-semibold">Premiere Pro</span>
+<span class="bg-[#FFE4E1] text-primary px-3 py-1 rounded-lg text-xs font-semibold">Sound Design</span>
+</div>
+<button class="btn-primary-gradient w-full py-4 rounded-xl text-white font-label-md text-label-md flex items-center justify-center gap-2 group">
+                            View Case Study
+                            <span class="material-symbols-outlined text-sm group-hover:translate-x-1 transition-transform">arrow_forward</span>
+</button>
+</div>
+</div>
+<!-- Resume Website -->
+<div class="glass-card rounded-2xl overflow-hidden flex flex-col">
+<div class="h-64 w-full overflow-hidden relative">
+<div class="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent z-10"></div>
+<img class="w-full h-full object-cover transform hover:scale-105 transition-transform duration-700" data-alt="A high-end web design mockup of a personal portfolio homepage. The design features a large serif headline, soft peach backgrounds, and translucent glass navigation bars. The layout is clean and spacious, demonstrating master-level typography and grid usage in a light-mode professional setting." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAOOM-9vcBl0nlqVdBy2USUT5NC_dNvokDiMjLcWBanfET54s5OQfFuGHHHRD8smrd1WyLj6cGbco5N2xTvFXvyD0qIG6k6omZzQEyzSXIrxhhtw7KjpFmkM46xSXtuRp8psH00v7rWLyFQ-uDB0j6qKsTwgpCeXFQVrpQdOjwLUDSkYVQSzgpQH_t_hr63blqWx8D7pDV5uKmSRJADkd2nuIS06mmqYIydX9eIC1Zb8BBN6SjpZrbyouHr20mLatwvIKWMegj5hVVi"/>
+</div>
+<div class="p-8 flex-grow flex flex-col">
+<div class="flex justify-between items-start mb-4">
+<h3 class="font-headline-md text-headline-md text-secondary">Resume Website</h3>
+<span class="bg-[#FFE4E1] text-primary px-3 py-1 rounded-full font-label-md text-label-md">Web Development</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant mb-6 flex-grow">
+                            A highly responsive, interactive portfolio site designed to showcase professional growth. Features smooth page transitions, dynamic content loading, and a custom-designed glassmorphism UI kit.
+                        </p>
+<div class="flex flex-wrap gap-2 mb-8">
+<span class="bg-[#FFE4E1] text-primary px-3 py-1 rounded-lg text-xs font-semibold">HTML5</span>
+<span class="bg-[#FFE4E1] text-primary px-3 py-1 rounded-lg text-xs font-semibold">JavaScript</span>
+<span class="bg-[#FFE4E1] text-primary px-3 py-1 rounded-lg text-xs font-semibold">CSS Grid</span>
+</div>
+<button class="btn-primary-gradient w-full py-4 rounded-xl text-white font-label-md text-label-md flex items-center justify-center gap-2 group">
+                            View Case Study
+                            <span class="material-symbols-outlined text-sm group-hover:translate-x-1 transition-transform">arrow_forward</span>
+</button>
+</div>
+</div>
+<!-- Future Project Placeholder -->
+<div class="glass-card rounded-2xl border-dashed border-2 border-primary/20 flex flex-col items-center justify-center p-12 text-center group cursor-pointer">
+<div class="w-20 h-20 rounded-full bg-primary/5 flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-4xl text-primary/40">add_circle</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-on-surface-variant/50">Next Masterpiece</h3>
+<p class="font-body-md text-body-md text-on-surface-variant/40 mt-2">Currently crafting something extraordinary. Stay tuned for new additions.</p>
+</div>
+</div>
+</section>
+<!-- CTA Section -->
+<section class="max-w-[1200px] mx-auto px-margin-desktop mb-section-gap">
+<div class="glass-card rounded-3xl p-12 md:p-20 text-center relative overflow-hidden">
+<div class="absolute top-0 right-0 w-64 h-64 bg-secondary-container/20 blur-3xl rounded-full -mr-32 -mt-32"></div>
+<div class="absolute bottom-0 left-0 w-64 h-64 bg-primary-container/10 blur-3xl rounded-full -ml-32 -mb-32"></div>
+<h2 class="font-headline-lg text-headline-lg text-primary mb-8 relative z-10">Interested in working together?</h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant mb-10 max-w-2xl mx-auto relative z-10">
+                    I'm always open to discussing new projects, creative ideas or opportunities to be part of your visions.
+                </p>
+<div class="flex flex-col md:flex-row gap-4 justify-center relative z-10">
+<button class="btn-primary-gradient px-12 py-4 rounded-full text-white font-label-md text-label-md shadow-lg">
+                        Start a Conversation
+                    </button>
+<button class="border border-primary text-primary hover:bg-primary/5 px-12 py-4 rounded-full font-label-md text-label-md transition-colors">
+                        Download CV
+                    </button>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-surface w-full py-12 border-t border-outline-variant">
+<div class="flex flex-col md:flex-row justify-between items-center max-w-[1200px] mx-auto px-margin-desktop gap-8">
+<div class="flex flex-col items-center md:items-start">
+<span class="font-headline-md text-headline-md font-bold text-primary mb-2">Siti Faisal</span>
+<p class="font-body-md text-body-md text-on-surface-variant">© 2024 Siti Aisha binti Mohd Faisal. Built with Precision.</p>
+</div>
+<div class="flex gap-8">
+<a class="text-on-surface-variant hover:text-secondary transition-colors font-body-md text-body-md" href="#">LinkedIn</a>
+<a class="text-on-surface-variant hover:text-secondary transition-colors font-body-md text-body-md" href="#">GitHub</a>
+<a class="text-on-surface-variant hover:text-secondary transition-colors font-body-md text-body-md" href="#">Email</a>
+</div>
+</div>
+</footer>
+<script>
+        // Interactive Micro-interactions
+        document.querySelectorAll('.glass-card').forEach(card => {
+            card.addEventListener('mousemove', (e) => {
+                const rect = card.getBoundingClientRect();
+                const x = e.clientX - rect.left;
+                const y = e.clientY - rect.top;
+                
+                card.style.setProperty('--mouse-x', `${x}px`);
+                card.style.setProperty('--mouse-y', `${y}px`);
+            });
+        });
+
+        // Simple Fade-in Observer
+        const observerOptions = {
+            threshold: 0.1
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('opacity-100', 'translate-y-0');
+                    entry.target.classList.remove('opacity-0', 'translate-y-10');
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.glass-card').forEach(el => {
+            el.classList.add('opacity-0', 'translate-y-10', 'transition-all', 'duration-700');
+            observer.observe(el);
+        });
+    </script>
+</body></html>

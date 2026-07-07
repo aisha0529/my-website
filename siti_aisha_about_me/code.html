@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>About | Siti Aisha binti Mohd Faisal</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&family=Inter:wght@400;500;600&family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Plus+Jakarta+Sans:wght@100..900&display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "background": "#fff8f3",
+                        "on-tertiary-container": "#c9b0ae",
+                        "on-primary": "#ffffff",
+                        "inverse-surface": "#362f27",
+                        "on-surface-variant": "#4d4353",
+                        "surface-container-high": "#f2e6d9",
+                        "tertiary-container": "#554341",
+                        "on-tertiary": "#ffffff",
+                        "on-primary-fixed-variant": "#690bac",
+                        "surface-container-lowest": "#ffffff",
+                        "secondary-fixed": "#ffdbd0",
+                        "inverse-primary": "#dfb7ff",
+                        "outline": "#7e7384",
+                        "secondary-container": "#fe9d7f",
+                        "error": "#ba1a1a",
+                        "on-primary-container": "#d4a1ff",
+                        "surface": "#fff8f3",
+                        "on-error-container": "#93000a",
+                        "primary-fixed": "#f1daff",
+                        "on-secondary": "#ffffff",
+                        "surface-tint": "#8333c6",
+                        "surface-container-low": "#fef2e4",
+                        "surface-container": "#f8ecdf",
+                        "error-container": "#ffdad6",
+                        "on-tertiary-fixed": "#261817",
+                        "surface-bright": "#fff8f3",
+                        "primary-fixed-dim": "#dfb7ff",
+                        "tertiary-fixed": "#f7ddda",
+                        "outline-variant": "#cfc2d5",
+                        "primary-container": "#6a0dad",
+                        "inverse-on-surface": "#fbefe2",
+                        "on-secondary-fixed-variant": "#76321c",
+                        "on-background": "#201b13",
+                        "surface-container-highest": "#ede1d4",
+                        "on-tertiary-fixed-variant": "#544341",
+                        "on-primary-fixed": "#2d004f",
+                        "surface-variant": "#ede1d4",
+                        "on-secondary-container": "#77321c",
+                        "on-secondary-fixed": "#3a0b00",
+                        "secondary-fixed-dim": "#ffb59e",
+                        "on-error": "#ffffff",
+                        "secondary": "#944930",
+                        "primary": "#4c0080",
+                        "tertiary-fixed-dim": "#dac1be",
+                        "tertiary": "#3d2d2b",
+                        "surface-dim": "#e4d8cb",
+                        "on-surface": "#201b13"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "margin-mobile": "20px",
+                        "base": "8px",
+                        "section-gap": "120px",
+                        "gutter": "24px",
+                        "margin-desktop": "64px",
+                        "container-max": "1200px"
+                    },
+                    "fontFamily": {
+                        "headline-lg-mobile": ["Plus Jakarta Sans"],
+                        "headline-lg": ["Plus Jakarta Sans"],
+                        "label-md": ["Inter"],
+                        "headline-md": ["Plus Jakarta Sans"],
+                        "body-lg": ["Inter"],
+                        "headline-xl": ["Plus Jakarta Sans"],
+                        "body-md": ["Inter"]
+                    },
+                    "fontSize": {
+                        "headline-lg-mobile": ["32px", {"lineHeight": "1.2", "fontWeight": "700"}],
+                        "headline-lg": ["48px", {"lineHeight": "1.2", "letterSpacing": "-0.01em", "fontWeight": "700"}],
+                        "label-md": ["14px", {"lineHeight": "1.2", "letterSpacing": "0.05em", "fontWeight": "600"}],
+                        "headline-md": ["32px", {"lineHeight": "1.3", "fontWeight": "600"}],
+                        "body-lg": ["18px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                        "headline-xl": ["64px", {"lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                        "body-md": ["16px", {"lineHeight": "1.6", "fontWeight": "400"}]
+                    }
+                },
+            },
+        }
+    </script>
+<style>
+        body {
+            background-color: #F0E4D7;
+            color: #201b13;
+        }
+        .glass-card {
+            background: rgba(255, 255, 255, 0.4);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            transition: all 0.3s ease-in-out;
+        }
+        .glass-card:hover {
+            border-color: rgba(106, 13, 221, 0.3);
+            box-shadow: 0 10px 30px -10px rgba(106, 13, 221, 0.1);
+        }
+        .text-orange-heading { color: #FF9E80; }
+        .bg-primary-custom { background-color: #6A0DAD; }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .reveal {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: all 0.6s ease-out;
+        }
+        .reveal.active {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    </style>
+</head>
+<body class="font-body-md text-body-md antialiased">
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full z-50 bg-white/30 backdrop-blur-xl border-b border-white/20 shadow-sm transition-all duration-300 h-20">
+<div class="flex justify-between items-center max-w-[1200px] mx-auto px-margin-desktop h-full">
+<span class="font-headline-md text-headline-md font-bold text-primary">Siti Faisal</span>
+<div class="hidden md:flex space-x-8 items-center">
+<a class="font-label-md text-label-md text-primary border-b-2 border-primary pb-1" href="#">About</a>
+<a class="font-label-md text-label-md text-on-surface-variant hover:text-primary transition-colors" href="#">Skills</a>
+<a class="font-label-md text-label-md text-on-surface-variant hover:text-primary transition-colors" href="#">Projects</a>
+<a class="font-label-md text-label-md text-on-surface-variant hover:text-primary transition-colors" href="#">Education</a>
+<a class="font-label-md text-label-md text-on-surface-variant hover:text-primary transition-colors" href="#">Contact</a>
+<button class="bg-primary-custom text-on-primary px-6 py-2.5 rounded-full font-label-md hover:opacity-90 transition-opacity">Hire Me</button>
+</div>
+<button class="md:hidden p-2">
+<span class="material-symbols-outlined">menu</span>
+</button>
+</div>
+</nav>
+<main class="pt-32">
+<!-- Hero Section -->
+<section class="max-w-[1200px] mx-auto px-margin-desktop mb-section-gap">
+<div class="flex flex-col md:flex-row items-center gap-16">
+<div class="flex-1 order-2 md:order-1">
+<span class="inline-block px-4 py-1.5 rounded-full bg-[#FFE4E1] text-primary font-label-md text-label-md mb-6">Hello, I'm Aisha</span>
+<h1 class="font-headline-xl text-headline-xl mb-8 leading-tight">
+                        Bridging <span class="text-primary">Data Integrity</span> with <span class="text-orange-heading">Human Insight.</span>
+</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-xl mb-10">
+                        A final-year Information Management student dedicated to transforming complex data architectures into seamless, user-centric experiences. I believe that information is most powerful when it's accessible.
+                    </p>
+<div class="flex gap-4">
+<button class="bg-primary-custom text-on-primary px-8 py-4 rounded-full font-label-md flex items-center gap-2 hover:translate-y-[-2px] transition-transform">
+                            View Portfolio <span class="material-symbols-outlined">arrow_forward</span>
+</button>
+</div>
+</div>
+<div class="flex-1 order-1 md:order-2">
+<div class="relative">
+<div class="w-full aspect-square rounded-[2.5rem] overflow-hidden glass-card p-4">
+<img class="w-full h-full object-cover rounded-[2rem]" data-alt="A professional yet warm portrait of a young woman with a friendly expression, set against a soft, sun-drenched studio background. She is wearing a modern, minimalist outfit in neutral tones that complements the peach and purple brand palette. The lighting is soft and diffused, creating an editorial feel that emphasizes her role as a professional student in Information Management. The overall aesthetic is clean, sophisticated, and human-centric." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDMTeal7ZU6NZdmPsS5AxvTO0ZF5R8dVKt7ZDAmdpF9nRpsZ-i891CtPVsUmIcPg1pVjpi3ZVhYHy_Iip9QiJU4q-u20S6uNnYF6MytqcFkSyLIR5iL-GlqTiGjbtNumJUb6YON5Vg6zqnTeTswRjcEBcP32G0GJCW9zPI2AWUAaH2w1BBVrktDLb8uNdGR-f6VuiusDnIfalruZvyq24Bolf5HE7ZUjbsWUewF0-gjFqpRhNOZbS9fD1uwAMwkt-9gn5f_WtZU0gsb"/>
+</div>
+<div class="absolute -bottom-6 -left-6 glass-card p-6 rounded-2xl hidden md:block">
+<div class="flex items-center gap-4">
+<div class="w-12 h-12 rounded-full bg-secondary-container flex items-center justify-center text-white">
+<span class="material-symbols-outlined">star</span>
+</div>
+<div>
+<p class="font-bold text-primary">Final Year</p>
+<p class="text-sm text-on-surface-variant">UiTM Student</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- My Story Section -->
+<section class="bg-surface-container py-section-gap mb-section-gap relative overflow-hidden">
+<div class="max-w-[1200px] mx-auto px-margin-desktop">
+<div class="grid grid-cols-1 md:grid-cols-12 gap-gutter">
+<div class="md:col-span-5">
+<h2 class="font-headline-lg text-headline-lg text-orange-heading mb-6">My Story</h2>
+<div class="w-20 h-1 bg-primary-custom mb-12"></div>
+</div>
+<div class="md:col-span-7 space-y-6">
+<p class="font-body-lg text-body-lg text-on-surface leading-relaxed">
+                            My journey began with a simple curiosity: how do we find meaning in the digital noise? Growing up in a world increasingly dominated by data, I became fascinated by the systems that organize our shared knowledge.
+                        </p>
+<p class="font-body-md text-body-md text-on-surface-variant">
+                            Choosing Information Management wasn't just about databases and archiving; it was about understanding how human behavior interacts with information. During my years at UiTM, I've evolved from a student of theory to a practitioner of design-thinking, always asking how a system can serve the person behind the screen.
+                        </p>
+<div class="grid grid-cols-2 gap-8 pt-8">
+<div>
+<h4 class="font-headline-md text-headline-md text-primary mb-2">3.8+</h4>
+<p class="text-sm uppercase tracking-widest text-outline">Current CGPA</p>
+</div>
+<div>
+<h4 class="font-headline-md text-headline-md text-primary mb-2">5+</h4>
+<p class="text-sm uppercase tracking-widest text-outline">Major Projects</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Decorative Element -->
+<div class="absolute -right-24 top-1/2 -translate-y-1/2 w-96 h-96 bg-primary/5 rounded-full blur-3xl"></div>
+</section>
+<!-- Education & Academic Journey (Bento Grid) -->
+<section class="max-w-[1200px] mx-auto px-margin-desktop mb-section-gap">
+<h2 class="font-headline-lg text-headline-lg mb-12 text-center">Academic <span class="text-primary">Journey</span></h2>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+<!-- Main Education Card -->
+<div class="md:col-span-2 glass-card p-10 rounded-[2rem] flex flex-col justify-between">
+<div>
+<div class="flex justify-between items-start mb-8">
+<div>
+<h3 class="font-headline-md text-headline-md text-primary mb-2">Bachelor of Information Management (Hons)</h3>
+<p class="text-on-surface-variant">Universiti Teknologi MARA (UiTM) • 2021 — Present</p>
+</div>
+<span class="material-symbols-outlined text-4xl text-secondary-container">school</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant mb-8">
+                            Specializing in the strategic management of information as a corporate resource. My focus lies at the intersection of technical infrastructure and organizational behavior.
+                        </p>
+</div>
+<div class="flex flex-wrap gap-3">
+<span class="px-4 py-2 rounded-full bg-[#FFE4E1] text-primary text-sm font-semibold">Strategic Planning</span>
+<span class="px-4 py-2 rounded-full bg-[#FFE4E1] text-primary text-sm font-semibold">Information Auditing</span>
+<span class="px-4 py-2 rounded-full bg-[#FFE4E1] text-primary text-sm font-semibold">UX Research</span>
+</div>
+</div>
+<!-- Secondary Education Card -->
+<div class="glass-card p-10 rounded-[2rem] bg-primary-custom/5">
+<h3 class="font-headline-md text-headline-md text-secondary mb-4">Diploma in IM</h3>
+<p class="text-sm text-outline mb-6">UiTM • 2018 — 2021</p>
+<p class="font-body-md text-body-md text-on-surface-variant">
+                        Provided the foundational technical skills in classification, cataloging, and the basics of database management.
+                    </p>
+</div>
+<!-- Core Coursework Bento Items -->
+<div class="glass-card p-8 rounded-[2rem] group">
+<div class="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center text-primary mb-6 group-hover:bg-primary group-hover:text-white transition-all">
+<span class="material-symbols-outlined">database</span>
+</div>
+<h4 class="font-bold text-lg mb-2">Database Systems</h4>
+<p class="text-sm text-on-surface-variant">Mastering SQL, data modeling, and relational database design for complex infrastructures.</p>
+</div>
+<div class="glass-card p-8 rounded-[2rem] group">
+<div class="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center text-primary mb-6 group-hover:bg-primary group-hover:text-white transition-all">
+<span class="material-symbols-outlined">folder_open</span>
+</div>
+<h4 class="font-bold text-lg mb-2">Records Management</h4>
+<p class="text-sm text-on-surface-variant">Focusing on the lifecycle of information and legal compliance in digital environments.</p>
+</div>
+<div class="glass-card p-8 rounded-[2rem] group">
+<div class="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center text-primary mb-6 group-hover:bg-primary group-hover:text-white transition-all">
+<span class="material-symbols-outlined">psychology</span>
+</div>
+<h4 class="font-bold text-lg mb-2">Human-Information Interaction</h4>
+<p class="text-sm text-on-surface-variant">Exploring how users search, process, and use information in digital ecosystems.</p>
+</div>
+</div>
+</section>
+<!-- Career Vision Section -->
+<section class="max-w-[1200px] mx-auto px-margin-desktop mb-section-gap">
+<div class="glass-card rounded-[3rem] p-12 md:p-20 relative overflow-hidden flex flex-col md:flex-row items-center gap-16">
+<div class="flex-1 z-10">
+<h2 class="font-headline-lg text-headline-lg text-orange-heading mb-8">Career Vision</h2>
+<p class="font-headline-md text-headline-md text-on-surface mb-8 italic">
+                        "To transform organizational chaos into digital clarity through elegant information architecture."
+                    </p>
+<p class="font-body-lg text-body-lg text-on-surface-variant">
+                        I aim to work at the forefront of digital transformation, where I can apply my knowledge of records management and database efficiency to build systems that don't just store data, but empower people to make better decisions.
+                    </p>
+</div>
+<div class="flex-1 relative z-10">
+<div class="grid grid-cols-2 gap-4">
+<div class="p-6 bg-white/40 rounded-2xl border border-white/40">
+<span class="material-symbols-outlined text-primary mb-2">speed</span>
+<h5 class="font-bold">Efficiency</h5>
+</div>
+<div class="p-6 bg-white/40 rounded-2xl border border-white/40 mt-8">
+<span class="material-symbols-outlined text-primary mb-2">verified</span>
+<h5 class="font-bold">Integrity</h5>
+</div>
+<div class="p-6 bg-white/40 rounded-2xl border border-white/40">
+<span class="material-symbols-outlined text-primary mb-2">group</span>
+<h5 class="font-bold">Accessibility</h5>
+</div>
+<div class="p-6 bg-white/40 rounded-2xl border border-white/40 mt-8">
+<span class="material-symbols-outlined text-primary mb-2">lightbulb</span>
+<h5 class="font-bold">Innovation</h5>
+</div>
+</div>
+</div>
+<!-- Background visual -->
+<div class="absolute -top-1/2 -right-1/4 w-[600px] h-[600px] bg-secondary/5 rounded-full blur-3xl"></div>
+</div>
+</section>
+<!-- Personal Interests & Philosophy -->
+<section class="max-w-[1200px] mx-auto px-margin-desktop mb-section-gap">
+<div class="text-center mb-16">
+<h2 class="font-headline-lg text-headline-lg mb-4">Beyond the <span class="text-primary">Data</span></h2>
+<p class="text-on-surface-variant">The creative side that fuels my technical work.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+<!-- Digital Art -->
+<div class="group relative overflow-hidden rounded-[2.5rem] h-[450px]">
+<div class="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-110" data-alt="A vibrant and abstract digital painting featuring fluid, organic shapes in shades of lavender, soft peach, and deep indigo. The artwork is modern and expressive, suggesting a flow of ideas and creativity. The style is clean and contemporary, fitting perfectly into a high-end portfolio layout. It represents the creative side of an information management professional." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDqipZvBK8ufF6pGdj5hTszBWfLIT9bV9Ow1r3k85SIXYcxSubOELx7sfG_E_yEuoINupy_Efss3McomdueXVY5Ddxdb5KDNtsWrF41qG1ZDw4rCQjrjIANuyqCfC22cJOWrtcQfu-NI5cjOf0rSeLRxwRM8vqckblPisec5qFZcfoPzFDtu7CxYMsSQycpCSRH0Uv26cwEdVmEpGG2zJdveJcj-V8KM8sI3Z-tP8hG_ZB0TzfXDNSDq7Y45FMgEDvG-2CVxVm44xlX')"></div>
+<div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent"></div>
+<div class="absolute bottom-0 left-0 p-10 text-white">
+<span class="font-label-md text-label-md uppercase tracking-widest text-secondary-fixed mb-4 inline-block">Creative Outlet</span>
+<h3 class="font-headline-md text-headline-md mb-4">Digital Art</h3>
+<p class="font-body-md text-white/80">Exploring visual storytelling through digital illustration and conceptual color theory.</p>
+</div>
+</div>
+<!-- Tech Blogging -->
+<div class="group relative overflow-hidden rounded-[2.5rem] h-[450px]">
+<div class="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-110" data-alt="A minimalist and aesthetically pleasing desk setup with a high-end laptop, a cup of coffee, and a notebook with elegant handwriting. The lighting is warm and natural, coming from a nearby window. The scene is calm and focused, representing the thoughtful process of tech blogging and information sharing. The color palette is consistent with the soft peach and neutral tones of the brand." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAu207hnpr7jZHEwpRSrR_OeWqO-mwvmCU9V1ygHB9tz8qSvL1NRUDueqe3ZUe3EaBhEe68B8M4-fI24jo86l6DuRzYTZ48a2-VmFX0ApBER0grs9sM4S66l-5S0Pv6yIffBTyzzxk4feeyFr1yxnOUx87er-XI9W7lw0kRo7_lW7VlmDop9uTqv7xe5_r1LA1JO0No-94WSChb3VdyHCTj0U11hmU8E-gr1JhAyQDt4vdQOPdksWSy4JA1Ax3SNFgGP352oeo9B_xp')"></div>
+<div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent"></div>
+<div class="absolute bottom-0 left-0 p-10 text-white">
+<span class="font-label-md text-label-md uppercase tracking-widest text-secondary-fixed mb-4 inline-block">Sharing Knowledge</span>
+<h3 class="font-headline-md text-headline-md mb-4">Tech Blogging</h3>
+<p class="font-body-md text-white/80">Writing about the future of information management and the impact of UX on organizational culture.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- CTA Section -->
+<section class="max-w-[1200px] mx-auto px-margin-desktop mb-32 text-center">
+<div class="glass-card p-16 rounded-[3rem] border-primary/10">
+<h2 class="font-headline-lg text-headline-lg mb-6">Let's Build Something <span class="text-primary">Seamless.</span></h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl mx-auto mb-10">
+                    I'm currently looking for internship and career opportunities in Information Management and User Experience.
+                </p>
+<div class="flex flex-col sm:flex-row justify-center gap-4">
+<button class="bg-primary-custom text-on-primary px-10 py-4 rounded-full font-label-md hover:shadow-lg transition-all">Download Resume</button>
+<button class="border-2 border-primary-custom text-primary px-10 py-4 rounded-full font-label-md hover:bg-primary-custom hover:text-white transition-all">Get In Touch</button>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-surface py-12 border-t border-outline-variant">
+<div class="flex flex-col md:flex-row justify-between items-center max-w-[1200px] mx-auto px-margin-desktop gap-8">
+<div>
+<span class="font-headline-md text-headline-md font-bold text-primary mb-2 block">Siti Faisal</span>
+<p class="font-body-md text-body-md text-on-surface-variant">© 2024 Siti Aisha binti Mohd Faisal. Built with Precision.</p>
+</div>
+<div class="flex gap-8">
+<a class="font-body-md text-on-surface-variant hover:text-secondary transition-colors" href="#">LinkedIn</a>
+<a class="font-body-md text-on-surface-variant hover:text-secondary transition-colors" href="#">GitHub</a>
+<a class="font-body-md text-on-surface-variant hover:text-secondary transition-colors" href="#">Email</a>
+</div>
+</div>
+</footer>
+<script>
+        // Scroll Reveal Interaction
+        const observerOptions = {
+            threshold: 0.1
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('active');
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('section').forEach(section => {
+            section.classList.add('reveal');
+            observer.observe(section);
+        });
+
+        // Navbar interaction
+        window.addEventListener('scroll', () => {
+            const nav = document.querySelector('nav');
+            if (window.scrollY > 50) {
+                nav.classList.add('h-16', 'bg-white/80');
+                nav.classList.remove('h-20', 'bg-white/30');
+            } else {
+                nav.classList.add('h-20', 'bg-white/30');
+                nav.classList.remove('h-16', 'bg-white/80');
+            }
+        });
+    </script>
+</body></html>

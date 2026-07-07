@@ -1,0 +1,571 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Siti Aisha binti Mohd Faisal | Portfolio</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&amp;family=Inter:wght@400;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Tailwind Configuration -->
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                "surface-container-low": "#fef2e4",
+                "surface-container-high": "#f2e6d9",
+                "primary": "#6a0dad",
+                "on-error-container": "#93000a",
+                "secondary-fixed": "#ffdbd0",
+                "on-primary-container": "#d4a1ff",
+                "inverse-surface": "#362f27",
+                "tertiary-fixed": "#f7ddda",
+                "on-secondary": "#ffffff",
+                "inverse-primary": "#dfb7ff",
+                "tertiary-container": "#554341",
+                "surface-bright": "#fff8f3",
+                "on-tertiary-container": "#c9b0ae",
+                "secondary-container": "#fe9d7f",
+                "primary-fixed": "#f1daff",
+                "primary-container": "#6a0dad",
+                "surface": "#fff8f3",
+                "surface-variant": "#ede1d4",
+                "on-primary-fixed": "#2d004f",
+                "on-surface-variant": "#4d4353",
+                "on-background": "#201b13",
+                "on-surface": "#201b13",
+                "outline": "#7e7384",
+                "on-secondary-fixed": "#3a0b00",
+                "on-tertiary-fixed": "#261817",
+                "on-tertiary-fixed-variant": "#544341",
+                "secondary": "#ff9e80",
+                "on-primary-fixed-variant": "#690bac",
+                "surface-container-highest": "#ede1d4",
+                "on-secondary-fixed-variant": "#76321c",
+                "on-secondary-container": "#77321c",
+                "inverse-on-surface": "#fbefe2",
+                "error-container": "#ffdad6",
+                "secondary-fixed-dim": "#ffb59e",
+                "primary-fixed-dim": "#dfb7ff",
+                "surface-tint": "#8333c6",
+                "surface-container-lowest": "#ffffff",
+                "surface-dim": "#e4d8cb",
+                "outline-variant": "#cfc2d5",
+                "background": "#f0e4d7",
+                "on-error": "#ffffff",
+                "on-primary": "#ffffff",
+                "tertiary-fixed-dim": "#dac1be",
+                "tertiary": "#3d2d2b",
+                "surface-container": "#f8ecdf",
+                "error": "#ba1a1a",
+                "on-tertiary": "#ffffff"
+            },
+            "borderRadius": {
+                "DEFAULT": "0.5rem",
+                "lg": "1rem",
+                "xl": "1.5rem",
+                "full": "9999px"
+            },
+            "spacing": {
+                "section-gap": "120px",
+                "gutter": "24px",
+                "margin-desktop": "64px",
+                "container-max": "1200px",
+                "margin-mobile": "20px",
+                "base": "8px"
+            },
+            "fontFamily": {
+                "headline-md": ["Plus Jakarta Sans"],
+                "label-md": ["Inter"],
+                "headline-xl": ["Plus Jakarta Sans"],
+                "headline-lg-mobile": ["Plus Jakarta Sans"],
+                "headline-lg": ["Plus Jakarta Sans"],
+                "body-lg": ["Inter"],
+                "body-md": ["Inter"]
+            },
+            "fontSize": {
+                "headline-md": ["32px", {"lineHeight": "1.3", "fontWeight": "600"}],
+                "label-md": ["14px", {"lineHeight": "1.2", "letterSpacing": "0.05em", "fontWeight": "600"}],
+                "headline-xl": ["64px", {"lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                "headline-lg-mobile": ["32px", {"lineHeight": "1.2", "fontWeight": "700"}],
+                "headline-lg": ["48px", {"lineHeight": "1.2", "letterSpacing": "-0.01em", "fontWeight": "700"}],
+                "body-lg": ["18px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                "body-md": ["16px", {"lineHeight": "1.6", "fontWeight": "400"}]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .glass-card {
+            background: rgba(255, 255, 255, 0.4);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            transition: all 0.3s ease;
+        }
+        .glass-card:hover {
+            border-color: rgba(106, 13, 189, 0.3);
+            box-shadow: 0 10px 30px -10px rgba(106, 13, 189, 0.1);
+            transform: translateY(-4px);
+        }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+            vertical-align: middle;
+        }
+        .reveal {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: all 0.8s ease-out;
+        }
+        .reveal.active {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    </style>
+</head>
+<body class="bg-background text-on-surface font-body-md overflow-x-hidden">
+<!-- Top Navigation Bar -->
+<nav class="fixed top-0 w-full z-50 bg-white/30 backdrop-blur-xl border-b border-white/20 shadow-sm h-20 transition-all duration-300 ease-in-out">
+<div class="flex justify-between items-center max-w-[1200px] mx-auto px-6 md:px-margin-desktop h-full">
+<span class="font-headline-md text-headline-md font-bold text-primary">Siti Faisal</span>
+<div class="hidden md:flex items-center gap-8">
+<a class="text-on-surface-variant hover:text-primary transition-colors font-label-md text-label-md" href="#about">About</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors font-label-md text-label-md" href="#skills">Skills</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors font-label-md text-label-md" href="#projects">Projects</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors font-label-md text-label-md" href="#education">Education</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors font-label-md text-label-md" href="#contact">Contact</a>
+</div>
+<button class="bg-primary text-on-primary px-6 py-2.5 rounded-full font-label-md text-label-md hover:bg-opacity-90 transition-all duration-300 shadow-md">
+            Hire Me
+        </button>
+</div>
+</nav>
+<!-- Hero Section -->
+<section class="min-h-screen flex items-center pt-20 px-margin-mobile md:px-margin-desktop relative overflow-hidden">
+<div class="max-w-container-max mx-auto grid md:grid-cols-2 gap-12 items-center relative z-10">
+<div class="reveal">
+<h1 class="font-headline-xl text-[48px] md:text-headline-xl text-primary leading-tight mb-6">
+                Managing Information <span class="text-secondary">with Precision.</span>
+</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant mb-10 max-w-lg">
+                Final-year Information Management student at UiTM, passionate about bridging the gap between complex data and user-centric digital experiences.
+            </p>
+<div class="flex flex-wrap gap-4">
+<button class="bg-primary text-on-primary px-8 py-4 rounded-full font-label-md flex items-center gap-2 hover:scale-105 transition-transform shadow-lg">
+<span class="material-symbols-outlined">download</span> Download CV
+                </button>
+<button class="border-2 border-secondary text-secondary px-8 py-4 rounded-full font-label-md hover:bg-secondary hover:text-white transition-all shadow-sm">
+                    Contact Me
+                </button>
+</div>
+</div>
+<div class="flex justify-center md:justify-end reveal">
+<div class="relative">
+<div class="w-64 h-64 md:w-96 md:h-96 rounded-full overflow-hidden border-8 border-white/50 shadow-2xl">
+<img alt="Siti Faisal Profile" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBv6mnwtBTLrvuSW2-hLcdLwRTx2z4jgzrEqdKydab0Nl6BKotOc-qGu5gylt34_CBYlzs1wZmiijacs2DoWuoZOVXTNCA1-fDfdKkJIUcufC_6c9Z_pztAMCYrbrH8Xghea0kq990zEkr2dYArfOXLPv0sMUrT0CFtMkfoIyn18BPTQf9IgnqLEHPZDBJ6E9k1HEL5RhM6PuyALD1NcTSdC-6X3ebh42RR10rfFummezRR8tGL_y3ho_xg-16HFf_xC_PU1v0K8xNH"/>
+</div>
+<div class="absolute -bottom-6 -left-6 w-32 h-32 bg-secondary/20 rounded-full blur-3xl"></div>
+<div class="absolute -top-6 -right-6 w-32 h-32 bg-primary/10 rounded-full blur-3xl"></div>
+</div>
+</div>
+</div>
+</section>
+<!-- About Me Section -->
+<section class="py-24 px-margin-mobile md:px-margin-desktop bg-surface-container-low" id="about">
+<div class="max-w-container-max mx-auto">
+<div class="grid md:grid-cols-12 gap-12">
+<div class="md:col-span-5 reveal">
+<h2 class="font-headline-lg text-headline-lg text-secondary mb-6">About Me</h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant mb-8">
+                    I am a dedicated student specializing in Information Management, where I've developed a keen eye for organization, database integrity, and digital communication. My goal is to leverage technology to create more efficient and accessible information systems.
+                </p>
+<div class="p-6 glass-card rounded-xl">
+<h4 class="font-headline-md text-headline-md text-primary mb-2 text-xl">Career Objective</h4>
+<p class="text-on-surface-variant">To secure a challenging position in Information Management where I can apply my analytical skills and technical proficiency to contribute to organizational success while growing as a professional.</p>
+</div>
+</div>
+<div class="md:col-span-7 space-y-8 reveal" id="education">
+<div>
+<h3 class="font-headline-md text-headline-md text-primary mb-6">Education</h3>
+<div class="relative pl-8 border-l-2 border-primary space-y-10">
+<div class="relative">
+<div class="absolute -left-[41px] top-0 w-4 h-4 bg-primary rounded-full border-4 border-background"></div>
+<h4 class="font-bold text-lg text-on-surface">Diploma in Information Management</h4>
+<p class="text-secondary font-semibold">Universiti Teknologi MARA (UiTM)</p>
+<p class="text-on-surface-variant text-sm">Graduating 2024</p>
+<p class="mt-2 text-on-surface-variant">Focusing on record management, database systems, and information technology applications.</p>
+</div>
+</div>
+</div>
+<div>
+<h3 class="font-headline-md text-headline-md text-primary mb-4">Interests</h3>
+<div class="flex flex-wrap gap-3">
+<span class="bg-primary/10 px-4 py-2 rounded-full text-primary font-medium">Digital Art</span>
+<span class="bg-primary/10 px-4 py-2 rounded-full text-primary font-medium">UI/UX Design</span>
+<span class="bg-primary/10 px-4 py-2 rounded-full text-primary font-medium">Tech Blogging</span>
+<span class="bg-primary/10 px-4 py-2 rounded-full text-primary font-medium">Motion Graphics</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Technical Prowess Section -->
+<section class="py-24 px-margin-mobile md:px-margin-desktop" id="skills">
+<div class="max-w-container-max mx-auto">
+<div class="text-center mb-16 reveal">
+<h2 class="font-headline-lg text-headline-lg text-secondary mb-4">Technical Prowess</h2>
+<p class="text-on-surface-variant max-w-2xl mx-auto">A blend of technical development skills and creative design tools to manage information effectively.</p>
+</div>
+<div class="grid grid-cols-2 md:grid-cols-4 gap-6 reveal">
+<!-- Skill Cards -->
+<div class="glass-card p-8 rounded-xl text-center group">
+<div class="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-primary text-3xl">code</span>
+</div>
+<h4 class="font-bold text-on-surface">HTML/CSS</h4>
+<div class="mt-4 h-1.5 w-full bg-white/30 rounded-full overflow-hidden">
+<div class="h-full bg-primary" style="width: 90%"></div>
+</div>
+</div>
+<div class="glass-card p-8 rounded-xl text-center group">
+<div class="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-primary text-3xl">javascript</span>
+</div>
+<h4 class="font-bold text-on-surface">JavaScript</h4>
+<div class="mt-4 h-1.5 w-full bg-white/30 rounded-full overflow-hidden">
+<div class="h-full bg-primary" style="width: 75%"></div>
+</div>
+</div>
+<div class="glass-card p-8 rounded-xl text-center group">
+<div class="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-primary text-3xl">terminal</span>
+</div>
+<h4 class="font-bold text-on-surface">C++</h4>
+<div class="mt-4 h-1.5 w-full bg-white/30 rounded-full overflow-hidden">
+<div class="h-full bg-primary" style="width: 80%"></div>
+</div>
+</div>
+<div class="glass-card p-8 rounded-xl text-center group">
+<div class="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-primary text-3xl">database</span>
+</div>
+<h4 class="font-bold text-on-surface">Database Mgmt</h4>
+<div class="mt-4 h-1.5 w-full bg-white/30 rounded-full overflow-hidden">
+<div class="h-full bg-primary" style="width: 85%"></div>
+</div>
+</div>
+<div class="glass-card p-8 rounded-xl text-center group">
+<div class="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-primary text-3xl">palette</span>
+</div>
+<h4 class="font-bold text-on-surface">Canva</h4>
+<div class="mt-4 h-1.5 w-full bg-white/30 rounded-full overflow-hidden">
+<div class="h-full bg-primary" style="width: 95%"></div>
+</div>
+</div>
+<div class="glass-card p-8 rounded-xl text-center group">
+<div class="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-primary text-3xl">table_chart</span>
+</div>
+<h4 class="font-bold text-on-surface">MS Office</h4>
+<div class="mt-4 h-1.5 w-full bg-white/30 rounded-full overflow-hidden">
+<div class="h-full bg-primary" style="width: 90%"></div>
+</div>
+</div>
+<div class="glass-card p-8 rounded-xl text-center group">
+<div class="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-primary text-3xl">play_circle</span>
+</div>
+<h4 class="font-bold text-on-surface">Motion Graphics</h4>
+<div class="mt-4 h-1.5 w-full bg-white/30 rounded-full overflow-hidden">
+<div class="h-full bg-primary" style="width: 70%"></div>
+</div>
+</div>
+<div class="glass-card p-8 rounded-xl text-center group">
+<div class="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-primary text-3xl">settings_suggest</span>
+</div>
+<h4 class="font-bold text-on-surface">Info Mgmt</h4>
+<div class="mt-4 h-1.5 w-full bg-white/30 rounded-full overflow-hidden">
+<div class="h-full bg-primary" style="width: 95%"></div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Featured Projects Section -->
+<section class="py-24 px-margin-mobile md:px-margin-desktop bg-surface-container" id="projects">
+<div class="max-w-container-max mx-auto">
+<h2 class="font-headline-lg text-headline-lg text-secondary mb-12 reveal">Featured Projects</h2>
+<div class="grid md:grid-cols-2 gap-8 reveal">
+<!-- Project Card 1 -->
+<div class="glass-card rounded-2xl overflow-hidden flex flex-col group">
+<div class="h-64 overflow-hidden">
+<img alt="Brew Purnama Café Website" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA_HwTQNd_f6KuKVBsOskW_n24HEWZsBAJZUSHmGTNIXZ1MNcfdi5YldbCj2bRNyRgEZhyTHlXHazv_50fQwwcH02UERY00DWLXj_-tyxBLx167o6Qdt43vhUtWR1sLRUEX4FZWHysL1BqwUiVl0bObdQ6NsqSK0bSbLuzuWChElkChcpm0Fv-_KQ2xw45vsiCYV5-TDOUhRtXZdilvQHtGP_g-idy7cpJOMnnaAm4NbRrI2ZhFFv_WvWa0Fe65qX9UtkRHLWYLN1sQ"/>
+</div>
+<div class="p-8 flex flex-col flex-grow">
+<h3 class="font-headline-md text-2xl text-primary mb-4">Brew Purnama Café Website</h3>
+<p class="text-on-surface-variant mb-6">A complete front-end design for a boutique café specializing in unique late-night coffee experiences.</p>
+<div class="mt-auto flex justify-between items-center">
+<div class="flex gap-2">
+<span class="text-xs font-bold bg-primary/10 text-primary px-3 py-1 rounded-full uppercase">HTML</span>
+<span class="text-xs font-bold bg-primary/10 text-primary px-3 py-1 rounded-full uppercase">Tailwind</span>
+</div>
+<a class="text-primary font-bold flex items-center gap-1 group-hover:gap-2 transition-all" href="#">
+                            View Project <span class="material-symbols-outlined">arrow_forward</span>
+</a>
+</div>
+</div>
+</div>
+<!-- Project Card 2 -->
+<div class="glass-card rounded-2xl overflow-hidden flex flex-col group">
+<div class="h-64 overflow-hidden">
+<img alt="Train Booking System" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBBmhNKd6tou95ab3uf2Qlf1pWFJXGGcBW4uZcbUhSectsXgKAsbhaNT9AzTUZdYvcR8Dz9x4FWMSIdBx0odcw_VDJa-TIkjnKcaFNO1yjTP8X2_JoXBnkyR36BJIQISILQbbNBPXeQfRRhjPFiyfvLKIQpTkEdZnP_2sSHnWT14PAQBdmbhk8c3a2wkq3Ymk_f6oKu_PHhtcx4M2ReRhQhIwyncoyPLMuLaLrZBOKNGyZFZLXkj7XbUt9Y_EH5eovB_QZCOPTmSJjt"/>
+</div>
+<div class="p-8 flex flex-col flex-grow">
+<h3 class="font-headline-md text-2xl text-primary mb-4">Train Booking System</h3>
+<p class="text-on-surface-variant mb-6">A C++ terminal application managing ticket reservations, seating charts, and user data securely.</p>
+<div class="mt-auto flex justify-between items-center">
+<div class="flex gap-2">
+<span class="text-xs font-bold bg-primary/10 text-primary px-3 py-1 rounded-full uppercase">C++</span>
+<span class="text-xs font-bold bg-primary/10 text-primary px-3 py-1 rounded-full uppercase">Logic</span>
+</div>
+<a class="text-primary font-bold flex items-center gap-1 group-hover:gap-2 transition-all" href="#">
+                            View Project <span class="material-symbols-outlined">arrow_forward</span>
+</a>
+</div>
+</div>
+</div>
+<!-- Project Card 3 -->
+<div class="glass-card rounded-2xl overflow-hidden flex flex-col group">
+<div class="h-64 overflow-hidden">
+<img alt="Racing Game Development" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD9KM-aXKYFpNvJzDpFBgsb-ozW-srLikpYzAiwAMs8h_qaPEp9NPbq-st6VbiVHis7hO_f09g0i0mDIGo_mqwNNt0lBVqw5-dh-gTdoKg3RDwDnvJZ93ruwTS4cNrlqXokscpKWilaMEYf5G-8Gtwx6x4nPHiHXxLCs33o7dRpqZMbfNi-mN45S3_24CRxLwhiJggLlnewBGUhuBaBBUP8dBFyuG8QOv9X6YOivGuHxlxuitWIjz3K8yQndSSQTI7O_YRV4c50ZZLg"/>
+</div>
+<div class="p-8 flex flex-col flex-grow">
+<h3 class="font-headline-md text-2xl text-primary mb-4">Racing Game Development</h3>
+<p class="text-on-surface-variant mb-6">A high-speed 2D racing experience focused on physics-based mechanics and responsive controls.</p>
+<div class="mt-auto flex justify-between items-center">
+<div class="flex gap-2">
+<span class="text-xs font-bold bg-primary/10 text-primary px-3 py-1 rounded-full uppercase">Game Engine</span>
+<span class="text-xs font-bold bg-primary/10 text-primary px-3 py-1 rounded-full uppercase">Assets</span>
+</div>
+<a class="text-primary font-bold flex items-center gap-1 group-hover:gap-2 transition-all" href="#">
+                            View Project <span class="material-symbols-outlined">arrow_forward</span>
+</a>
+</div>
+</div>
+</div>
+<!-- Project Card 4 -->
+<div class="glass-card rounded-2xl overflow-hidden flex flex-col group">
+<div class="h-64 overflow-hidden">
+<img alt="Motion Graphic Video" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDVZ8vlTrR5eTsF_HrUyoCrVVy1meWRuLLibBQNc29nj8YT61AahpffsrkTm4l8aE1zHLoWCk84BEwU153lA0ztAdegPfT_VME95VNyZBOJ05_PxoHRIo8ZcYrdCj6W8eCxfMPHLYfb2MrnjtO44vpgFQX3MmLA_3J71n_NP0TE4aKb6SyuiB2UZTWwzx4ryUe1G8WtrMPo2uE-Pvyftr3xQMWqSA_jqgqF-vwy32w-6E9QaoeiGEtTaVnBpQalgyYevRxQvOcVo4uI"/>
+</div>
+<div class="p-8 flex flex-col flex-grow">
+<h3 class="font-headline-md text-2xl text-primary mb-4">Motion Graphic Video</h3>
+<p class="text-on-surface-variant mb-6">An engaging promotional video combining typography, music, and fluid animations for brand storytelling.</p>
+<div class="mt-auto flex justify-between items-center">
+<div class="flex gap-2">
+<span class="text-xs font-bold bg-primary/10 text-primary px-3 py-1 rounded-full uppercase">Canva</span>
+<span class="text-xs font-bold bg-primary/10 text-primary px-3 py-1 rounded-full uppercase">Video</span>
+</div>
+<a class="text-primary font-bold flex items-center gap-1 group-hover:gap-2 transition-all" href="#">
+                            View Project <span class="material-symbols-outlined">arrow_forward</span>
+</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Professional Experience Section -->
+<section class="py-24 px-margin-mobile md:px-margin-desktop bg-background">
+<div class="max-w-container-max mx-auto reveal">
+<h2 class="font-headline-lg text-headline-lg text-secondary mb-12">Professional Experience</h2>
+<div class="glass-card p-10 rounded-2xl border-l-8 border-primary">
+<div class="flex flex-col md:flex-row md:items-center justify-between mb-8 gap-4">
+<div>
+<h3 class="font-headline-md text-primary">Intern Information Officer</h3>
+<p class="text-secondary font-semibold text-lg">Universiti Teknikal Malaysia Melaka (UTeM)</p>
+</div>
+<span class="bg-primary/10 text-primary px-6 py-2 rounded-full font-bold">2023 - 2024</span>
+</div>
+<div class="grid md:grid-cols-2 gap-8">
+<div>
+<h4 class="font-bold text-on-surface mb-4 flex items-center gap-2">
+<span class="material-symbols-outlined text-primary">task_alt</span> Responsibilities
+                    </h4>
+<ul class="space-y-3 text-on-surface-variant">
+<li>Managed and digitized institutional records for the university archives.</li>
+<li>Assisted in database maintenance and information security audits.</li>
+<li>Collaborated with the IT department on troubleshooting network queries.</li>
+<li>Designed informational brochures and internal communications using Canva.</li>
+</ul>
+</div>
+<div>
+<h4 class="font-bold text-on-surface mb-4 flex items-center gap-2">
+<span class="material-symbols-outlined text-primary">auto_awesome</span> Skills Gained
+                    </h4>
+<div class="flex flex-wrap gap-2">
+<span class="bg-secondary/10 text-secondary px-3 py-1 rounded-lg text-sm font-semibold">Archiving</span>
+<span class="bg-secondary/10 text-secondary px-3 py-1 rounded-lg text-sm font-semibold">Teamwork</span>
+<span class="bg-secondary/10 text-secondary px-3 py-1 rounded-lg text-sm font-semibold">Data Integrity</span>
+<span class="bg-secondary/10 text-secondary px-3 py-1 rounded-lg text-sm font-semibold">Office Admin</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Achievements Section -->
+<section class="py-24 px-margin-mobile md:px-margin-desktop bg-surface-container-high">
+<div class="max-w-container-max mx-auto reveal">
+<h2 class="font-headline-lg text-headline-lg text-secondary mb-12 text-center">Achievements &amp; Certifications</h2>
+<div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+<div class="aspect-[4/3] glass-card rounded-xl overflow-hidden group relative">
+<img alt="Achievement 1" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDMwdAZCh9KCV4qOpfwl3ALN7lsDEw10iCWbXEtkxYEOwCBZIhhrumjDlD3qSbGXPZ4Gns3-1xVLFC_do3zTcMQUFneZ5-hUKlVt0fGWCp3uX1Y_7A8yrgHlopI5zKfAkVvpvdZtFMCSZHwDvgMVBgCkGyefWvU-9T219baaxyF43KCRhwGFvreZdRQm3CLnLzsL6m8P11BzR5o9kgwd6ionWmbt4VGvV0dAYaTNqVf5dX8ImaGnxJOyKrrZRKO43opSRXemS6w7r1a"/>
+<div class="absolute inset-0 bg-primary/60 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center p-4 text-center">
+<p class="text-white font-bold">Dean's List Award Semester 1</p>
+</div>
+</div>
+<div class="aspect-[4/3] glass-card rounded-xl overflow-hidden group relative">
+<img alt="Achievement 2" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDsW5E9fC3Tm9kPZmf_y-P5j_1Senvjhz-TjChUb4Sae5veYFk5cx5vLNrUyVmd3IoKAM7qfYMTCUuzysSa55b-HNC0shr5x6JU3CDzUZSNXxMM1ynslX4V9rSz0VET3hqby58A3s_Zvs0UHI2RmdclMukbkaRXwn9TX3qep3rrl8tz90lKpFRerRkULqy754M0nZyOkdlOxj8jAON4BsaO70FIAgU3Imp_GD1auSWnSiklXGDjUHfqFPTTVDvAemq9rk0LUsFSTzHv"/>
+<div class="absolute inset-0 bg-primary/60 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center p-4 text-center">
+<p class="text-white font-bold">Web Dev Bootcamp Completion</p>
+</div>
+</div>
+<div class="aspect-[4/3] glass-card rounded-xl overflow-hidden group relative">
+<img alt="Achievement 3" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDAdjIA9ux8HbOhn2LM0kbmTxCBuax2tW-PP8qqdqLX_TtXE5Lkblbl5Te28rz6F5twLXUJnZsMjr5x3FbCro0A0X4gD4a-k_wdEyPqxf2FS3U44gWrn8pzjp-EYzmRQ1LfNsmyiQwiOSrj3aSJoxbTSb4O9gev9Wd5cbPy0PUmzVWkE-Kh9Zbhz-84OVRw6CbMeT30oel-BadTXD6BlZt1XziUmWsLAe0ULxmDg1B3xu22zEMHz9MMcYfDzi0VknPOToCXeYTp1qvg"/>
+<div class="absolute inset-0 bg-primary/60 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center p-4 text-center">
+<p class="text-white font-bold">UiTM Tech Sprint Participation</p>
+</div>
+</div>
+<div class="aspect-[4/3] glass-card rounded-xl overflow-hidden group relative">
+<img alt="Achievement 4" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCYS-uPemMNhXitXjKDk0Frg0QcrE4ySb6_PNfpqIWnPtJ4MR7Ckr2Zz3A0PNpmDKPuPgjWsA3yI6BflSDYGpa1jCxZ5Y2BgmjokfMbG_cKg_gDpoT4BsekWU7EHRr6JdUP37x10yo8aCTfg5_XdB3vt47kfN2FKYrufLsijTpYUMnwvwUiKiF9aQbhuwr7QhjE6HHdulidWSgs5MFtD_s0tr9Fc_-xf-9KgGNO65tBs2XjxCrH0hZJk04LoLUWX8-sGN5qOzYizWNR"/>
+<div class="absolute inset-0 bg-primary/60 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center p-4 text-center">
+<p class="text-white font-bold">Microsoft Office Specialist Core</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Contact Section -->
+<section class="py-24 px-margin-mobile md:px-margin-desktop bg-background" id="contact">
+<div class="max-w-container-max mx-auto">
+<div class="grid lg:grid-cols-2 gap-16 reveal">
+<div>
+<h2 class="font-headline-lg text-headline-lg text-secondary mb-6">Let's Connect</h2>
+<p class="text-on-surface-variant mb-10">Have a project in mind or just want to say hi? I'm always open to discussing new opportunities and collaborations.</p>
+<div class="space-y-6">
+<div class="flex items-center gap-4">
+<div class="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center text-primary">
+<span class="material-symbols-outlined">mail</span>
+</div>
+<div>
+<p class="text-sm text-on-surface-variant">Email</p>
+<p class="font-bold">sitiaisha@example.com</p>
+</div>
+</div>
+<div class="flex items-center gap-4">
+<div class="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center text-primary">
+<span class="material-symbols-outlined">call</span>
+</div>
+<div>
+<p class="text-sm text-on-surface-variant">Phone</p>
+<p class="font-bold">+60 12-345 6789</p>
+</div>
+</div>
+<div class="flex items-center gap-4">
+<div class="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center text-primary">
+<span class="material-symbols-outlined">pin_drop</span>
+</div>
+<div>
+<p class="text-sm text-on-surface-variant">Location</p>
+<p class="font-bold">Melaka, Malaysia</p>
+</div>
+</div>
+</div>
+<div class="mt-12 h-64 rounded-2xl overflow-hidden glass-card relative bg-surface-variant">
+<div class="w-full h-full flex items-center justify-center">
+<span class="material-symbols-outlined text-4xl text-primary animate-bounce">location_on</span>
+</div>
+</div>
+</div>
+<div class="glass-card p-8 md:p-12 rounded-3xl">
+<form class="space-y-6" onsubmit="event.preventDefault(); alert('Message sent!');">
+<div class="grid md:grid-cols-2 gap-6">
+<div>
+<label class="block text-sm font-bold text-on-surface mb-2">Name</label>
+<input class="w-full bg-white/50 border-none rounded-xl p-4 focus:ring-2 focus:ring-primary transition-all" placeholder="Your Name" required="" type="text"/>
+</div>
+<div>
+<label class="block text-sm font-bold text-on-surface mb-2">Email</label>
+<input class="w-full bg-white/50 border-none rounded-xl p-4 focus:ring-2 focus:ring-primary transition-all" placeholder="Your Email" required="" type="email"/>
+</div>
+</div>
+<div>
+<label class="block text-sm font-bold text-on-surface mb-2">Subject</label>
+<input class="w-full bg-white/50 border-none rounded-xl p-4 focus:ring-2 focus:ring-primary transition-all" placeholder="Topic of conversation" required="" type="text"/>
+</div>
+<div>
+<label class="block text-sm font-bold text-on-surface mb-2">Message</label>
+<textarea class="w-full bg-white/50 border-none rounded-xl p-4 focus:ring-2 focus:ring-primary transition-all" placeholder="Tell me more..." required="" rows="5"></textarea>
+</div>
+<button class="w-full bg-primary text-on-primary py-4 rounded-xl font-bold hover:bg-opacity-90 transition-all shadow-lg transform hover:-translate-y-1" type="submit">
+                        Send Message
+                    </button>
+</form>
+</div>
+</div>
+</div>
+</section>
+<!-- Footer -->
+<footer class="bg-surface border-t border-outline-variant w-full py-12">
+<div class="flex flex-col md:flex-row justify-between items-center max-w-[1200px] mx-auto px-6 md:px-margin-desktop gap-8">
+<div class="text-center md:text-left">
+<span class="font-headline-md text-headline-md font-bold text-primary">Siti Faisal</span>
+<p class="text-on-surface-variant font-body-md text-body-md mt-2 max-w-xs">Building bridges between data and human experience.</p>
+</div>
+<div class="flex gap-6">
+<a class="text-on-surface-variant hover:text-secondary transition-colors opacity-90 hover:opacity-100 font-bold" href="#">LinkedIn</a>
+<a class="text-on-surface-variant hover:text-secondary transition-colors opacity-90 hover:opacity-100 font-bold" href="#">GitHub</a>
+<a class="text-on-surface-variant hover:text-secondary transition-colors opacity-90 hover:opacity-100 font-bold" href="#">Email</a>
+</div>
+<div class="text-on-surface-variant text-sm font-body-md text-center md:text-right">
+            © 2024 Siti Aisha binti Mohd Faisal. <br/>Built with Precision.
+        </div>
+</div>
+</footer>
+<script>
+    // Simple reveal animation on scroll
+    function reveal() {
+        var reveals = document.querySelectorAll(".reveal");
+        for (var i = 0; i < reveals.length; i++) {
+            var windowHeight = window.innerHeight;
+            var elementTop = reveals[i].getBoundingClientRect().top;
+            var elementVisible = 150;
+            if (elementTop < windowHeight - elementVisible) {
+                reveals[i].classList.add("active");
+            }
+        }
+    }
+
+    window.addEventListener("scroll", reveal);
+    // Trigger on load
+    reveal();
+
+    // Navbar shadow on scroll
+    window.addEventListener('scroll', function() {
+        const nav = document.querySelector('nav');
+        if (window.scrollY > 50) {
+            nav.classList.add('shadow-lg', 'bg-white/60');
+            nav.classList.replace('h-20', 'h-16');
+        } else {
+            nav.classList.remove('shadow-lg', 'bg-white/60');
+            nav.classList.replace('h-16', 'h-20');
+        }
+    });
+</script>
+</body></html>

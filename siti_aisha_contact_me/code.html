@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Contact | Siti Aisha - Information Management Professional</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&amp;family=Inter:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "on-tertiary-fixed": "#261817",
+                    "outline-variant": "#cfc2d5",
+                    "on-primary": "#ffffff",
+                    "on-primary-fixed-variant": "#690bac",
+                    "primary-fixed-dim": "#dfb7ff",
+                    "on-primary-fixed": "#2d004f",
+                    "on-primary-container": "#d4a1ff",
+                    "on-tertiary-fixed-variant": "#544341",
+                    "on-surface": "#201b13",
+                    "on-secondary-fixed-variant": "#76321c",
+                    "error-container": "#ffdad6",
+                    "primary-container": "#6a0dad",
+                    "surface-dim": "#e4d8cb",
+                    "secondary-container": "#fe9d7f",
+                    "tertiary-fixed": "#f7ddda",
+                    "on-error-container": "#93000a",
+                    "error": "#ba1a1a",
+                    "surface-bright": "#fff8f3",
+                    "primary": "#4c0080",
+                    "surface": "#fff8f3",
+                    "on-background": "#201b13",
+                    "surface-container-low": "#fef2e4",
+                    "on-error": "#ffffff",
+                    "surface-container-high": "#f2e6d9",
+                    "on-secondary-container": "#77321c",
+                    "tertiary-container": "#554341",
+                    "inverse-primary": "#dfb7ff",
+                    "surface-container": "#f8ecdf",
+                    "outline": "#7e7384",
+                    "on-surface-variant": "#4d4353",
+                    "surface-tint": "#8333c6",
+                    "tertiary-fixed-dim": "#dac1be",
+                    "on-tertiary": "#ffffff",
+                    "surface-container-highest": "#ede1d4",
+                    "tertiary": "#3d2d2b",
+                    "surface-variant": "#ede1d4",
+                    "inverse-on-surface": "#fbefe2",
+                    "background": "#fff8f3",
+                    "secondary-fixed": "#ffdbd0",
+                    "primary-fixed": "#f1daff",
+                    "inverse-surface": "#362f27",
+                    "secondary-fixed-dim": "#ffb59e",
+                    "on-tertiary-container": "#c9b0ae",
+                    "secondary": "#944930",
+                    "on-secondary-fixed": "#3a0b00",
+                    "on-secondary": "#ffffff",
+                    "surface-container-lowest": "#ffffff"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.25rem",
+                    "lg": "0.5rem",
+                    "xl": "0.75rem",
+                    "full": "9999px"
+            },
+            "spacing": {
+                    "margin-mobile": "20px",
+                    "section-gap": "120px",
+                    "gutter": "24px",
+                    "container-max": "1200px",
+                    "margin-desktop": "64px",
+                    "base": "8px"
+            },
+            "fontFamily": {
+                    "label-md": ["Inter"],
+                    "headline-xl": ["Plus Jakarta Sans"],
+                    "headline-lg": ["Plus Jakarta Sans"],
+                    "body-md": ["Inter"],
+                    "headline-lg-mobile": ["Plus Jakarta Sans"],
+                    "headline-md": ["Plus Jakarta Sans"],
+                    "body-lg": ["Inter"]
+            },
+            "fontSize": {
+                    "label-md": ["14px", {"lineHeight": "1.2", "letterSpacing": "0.05em", "fontWeight": "600"}],
+                    "headline-xl": ["64px", {"lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                    "headline-lg": ["48px", {"lineHeight": "1.2", "letterSpacing": "-0.01em", "fontWeight": "700"}],
+                    "body-md": ["16px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                    "headline-lg-mobile": ["32px", {"lineHeight": "1.2", "fontWeight": "700"}],
+                    "headline-md": ["32px", {"lineHeight": "1.3", "fontWeight": "600"}],
+                    "body-lg": ["18px", {"lineHeight": "1.6", "fontWeight": "400"}]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        body {
+            background-color: #fff8f3; /* Sand Base */
+            color: #201b13;
+        }
+        .glass-panel {
+            background: rgba(255, 255, 255, 0.4);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+        .glass-input {
+            background: rgba(255, 255, 255, 0.2);
+            backdrop-filter: blur(4px);
+            border: 1px solid rgba(126, 115, 132, 0.2);
+            transition: all 0.3s ease;
+        }
+        .glass-input:focus {
+            outline: none;
+            border-color: #6a0dad;
+            background: rgba(255, 255, 255, 0.5);
+            box-shadow: 0 0 0 4px rgba(106, 13, 173, 0.05);
+        }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .hero-gradient {
+            background: radial-gradient(circle at top right, #f1daff 0%, transparent 50%),
+                        radial-gradient(circle at bottom left, #ffdbd0 0%, transparent 50%);
+        }
+    </style>
+</head>
+<body class="font-body-md text-body-md selection:bg-primary-fixed selection:text-primary">
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full z-50 bg-white/40 dark:bg-black/40 backdrop-blur-[20px] border-b border-white/20 hover:shadow-primary/10 transition-shadow duration-300">
+<div class="flex justify-between items-center max-w-[1200px] mx-auto px-margin-desktop py-4">
+<a class="font-headline-md text-headline-md font-bold text-primary dark:text-primary-fixed-dim" href="#">Siti Aisha</a>
+<!-- Desktop Links -->
+<div class="hidden md:flex items-center gap-8">
+<a class="font-label-md text-label-md text-on-surface-variant hover:text-primary transition-colors" href="#">About</a>
+<a class="font-label-md text-label-md text-on-surface-variant hover:text-primary transition-colors" href="#">Skills</a>
+<a class="font-label-md text-label-md text-on-surface-variant hover:text-primary transition-colors" href="#">Projects</a>
+<a class="font-label-md text-label-md text-on-surface-variant hover:text-primary transition-colors" href="#">Education</a>
+<a class="font-label-md text-label-md text-primary dark:text-primary-fixed-dim border-b-2 border-primary pb-1" href="#">Contact</a>
+<button class="ml-4 px-6 py-2 bg-primary text-on-primary rounded-full font-label-md text-label-md hover:opacity-90 transition-all active:scale-95 duration-200 shadow-lg shadow-primary/20">Resume</button>
+</div>
+<!-- Mobile Menu Trigger -->
+<button class="md:hidden p-2 text-primary">
+<span class="material-symbols-outlined">menu</span>
+</button>
+</div>
+</nav>
+<main class="relative pt-32 overflow-hidden hero-gradient min-h-screen">
+<!-- Abstract Background Element -->
+<div class="absolute -top-24 -right-24 w-96 h-96 bg-primary/5 rounded-full blur-3xl"></div>
+<div class="absolute top-1/2 -left-48 w-[500px] h-[500px] bg-secondary-fixed/10 rounded-full blur-[120px]"></div>
+<div class="max-w-[1200px] mx-auto px-margin-mobile md:px-margin-desktop">
+<!-- Hero Section -->
+<header class="mb-20 text-center md:text-left">
+<span class="inline-block px-4 py-1.5 rounded-full bg-secondary-fixed text-on-secondary-fixed font-label-md text-[12px] mb-6 tracking-widest uppercase">Available for Collaboration</span>
+<h1 class="font-headline-xl text-headline-xl md:text-headline-xl text-on-background mb-4">
+                    Let's <span class="text-primary italic">Connect</span>
+</h1>
+<p class="max-w-2xl font-body-lg text-body-lg text-on-surface-variant">
+                    Whether you have a project in mind, a question about information management, or just want to say hello, I'd love to hear from you.
+                </p>
+</header>
+<!-- Two Column Layout -->
+<div class="grid grid-cols-1 md:grid-cols-12 gap-12 lg:gap-gutter pb-section-gap items-start">
+<!-- Left: Contact Info -->
+<div class="md:col-span-5 space-y-12">
+<section>
+<h2 class="font-headline-md text-headline-md text-on-background mb-6">Contact Information</h2>
+<div class="space-y-6">
+<!-- Email -->
+<div class="flex items-start gap-4 group">
+<div class="w-12 h-12 rounded-xl glass-panel flex items-center justify-center text-primary transition-transform group-hover:scale-110">
+<span class="material-symbols-outlined">mail</span>
+</div>
+<div>
+<p class="font-label-md text-label-md text-on-surface-variant uppercase tracking-wider mb-1">Email</p>
+<a class="font-body-lg text-body-lg font-semibold hover:text-primary transition-colors" href="mailto:sitiaisha@example.com">sitiaisha@example.com</a>
+</div>
+</div>
+<!-- LinkedIn -->
+<div class="flex items-start gap-4 group">
+<div class="w-12 h-12 rounded-xl glass-panel flex items-center justify-center text-primary transition-transform group-hover:scale-110">
+<span class="material-symbols-outlined">link</span>
+</div>
+<div>
+<p class="font-label-md text-label-md text-on-surface-variant uppercase tracking-wider mb-1">LinkedIn</p>
+<a class="font-body-lg text-body-lg font-semibold hover:text-primary transition-colors" href="#">linkedin.com/in/sitiaisha</a>
+</div>
+</div>
+<!-- GitHub -->
+<div class="flex items-start gap-4 group">
+<div class="w-12 h-12 rounded-xl glass-panel flex items-center justify-center text-primary transition-transform group-hover:scale-110">
+<span class="material-symbols-outlined">code</span>
+</div>
+<div>
+<p class="font-label-md text-label-md text-on-surface-variant uppercase tracking-wider mb-1">GitHub</p>
+<a class="font-body-lg text-body-lg font-semibold hover:text-primary transition-colors" href="#">github.com/sitiaisha</a>
+</div>
+</div>
+</div>
+</section>
+<section class="p-8 rounded-3xl glass-panel border border-white/40">
+<h3 class="font-headline-md text-headline-md text-secondary mb-4">Professional Message</h3>
+<p class="text-on-surface-variant leading-relaxed mb-6">
+                            As a final-year Information Management student, I am passionate about bridging the gap between complex data systems and human-centric design. I am currently seeking opportunities to apply my analytical skills in dynamic environments.
+                        </p>
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-full overflow-hidden border-2 border-white shadow-sm">
+<img class="w-full h-full object-cover" data-alt="A professional and warm headshot of a young woman with a friendly smile, dressed in business casual attire. The photography is soft-focus with natural, warm sunlight, set against a blurred background of a modern minimalist office with sandy and peach tones, maintaining a high-end editorial aesthetic." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBAeNjbyhpyQBqFAaev3EwqjR1yzJCxfyB6qedyQ5nMTo5c_5ySdv_E-WnhMQkgCWWisKu41QyI1ihN3nnPFQOJtNeMzVVJDqr66Ri8Y2k5rC9EUad-8AqfUiGPsMRJKjqQ1auRaHC07KRKxJe_JKA9Nt9ZRgGZSPKo4HIyuj6bdEHsqPFkipGrVS_GWwD20naCZmerI-Sz332-NUWZJnMPFG8ixjZ7GvkPBk0VJEukjc9pbGB4mwgsu3s4NWgw9VyA5XfP58dBC7kp"/>
+</div>
+<div>
+<p class="font-label-md text-label-md text-on-background">Siti Aisha</p>
+<p class="text-[12px] text-on-surface-variant">Information Management @ University</p>
+</div>
+</div>
+</section>
+</div>
+<!-- Right: Contact Form -->
+<div class="md:col-span-7">
+<form class="p-8 md:p-12 rounded-[2rem] glass-panel shadow-xl shadow-primary/5 space-y-8 relative overflow-hidden" id="contactForm">
+<!-- Decorative glow -->
+<div class="absolute -top-20 -right-20 w-40 h-40 bg-secondary-container/20 rounded-full blur-3xl pointer-events-none"></div>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+<div class="space-y-2">
+<label class="font-label-md text-label-md text-on-surface-variant ml-1" for="name">Full Name</label>
+<input class="w-full px-6 py-4 rounded-xl glass-input placeholder:text-outline" id="name" name="name" placeholder="Jane Doe" required="" type="text"/>
+</div>
+<div class="space-y-2">
+<label class="font-label-md text-label-md text-on-surface-variant ml-1" for="email">Email Address</label>
+<input class="w-full px-6 py-4 rounded-xl glass-input placeholder:text-outline" id="email" name="email" placeholder="jane@example.com" required="" type="email"/>
+</div>
+</div>
+<div class="space-y-2">
+<label class="font-label-md text-label-md text-on-surface-variant ml-1" for="subject">Subject</label>
+<input class="w-full px-6 py-4 rounded-xl glass-input placeholder:text-outline" id="subject" name="subject" placeholder="Inquiry about collaboration" required="" type="text"/>
+</div>
+<div class="space-y-2">
+<label class="font-label-md text-label-md text-on-surface-variant ml-1" for="message">Your Message</label>
+<textarea class="w-full px-6 py-4 rounded-xl glass-input placeholder:text-outline resize-none" id="message" name="message" placeholder="How can I help you today?" required="" rows="5"></textarea>
+</div>
+<button class="w-full py-5 bg-primary text-on-primary rounded-xl font-label-md text-[16px] tracking-wide hover:opacity-90 hover:shadow-2xl hover:shadow-primary/30 transition-all active:scale-[0.98] flex items-center justify-center gap-2 group" type="submit">
+                            Send Message
+                            <span class="material-symbols-outlined text-[20px] group-hover:translate-x-1 transition-transform">send</span>
+</button>
+</form>
+</div>
+</div>
+</div>
+</main>
+<!-- Footer -->
+<footer class="w-full bg-surface-container-lowest border-t border-outline-variant">
+<div class="flex flex-col md:flex-row justify-between items-center max-w-[1200px] mx-auto px-margin-desktop py-12">
+<div class="mb-8 md:mb-0 text-center md:text-left">
+<h3 class="font-headline-md text-headline-md text-primary mb-2">Siti Aisha</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">© 2024 Siti Aisha. All rights reserved.</p>
+</div>
+<div class="flex gap-8">
+<a class="font-body-md text-body-md text-on-surface-variant hover:text-secondary transition-opacity opacity-80 hover:opacity-100" href="#">LinkedIn</a>
+<a class="font-body-md text-body-md text-on-surface-variant hover:text-secondary transition-opacity opacity-80 hover:opacity-100" href="#">GitHub</a>
+<a class="font-body-md text-body-md text-on-surface-variant hover:text-secondary transition-opacity opacity-80 hover:opacity-100" href="#">Twitter</a>
+</div>
+</div>
+</footer>
+<script>
+        document.getElementById('contactForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            const btn = this.querySelector('button');
+            const originalContent = btn.innerHTML;
+            
+            // Interaction feedback
+            btn.innerHTML = '<span class="material-symbols-outlined animate-spin">refresh</span> Sending...';
+            btn.disabled = true;
+            
+            setTimeout(() => {
+                btn.innerHTML = '<span class="material-symbols-outlined text-green-500">check_circle</span> Sent Successfully';
+                btn.classList.add('bg-green-600');
+                
+                setTimeout(() => {
+                    btn.innerHTML = originalContent;
+                    btn.classList.remove('bg-green-600');
+                    btn.disabled = false;
+                    this.reset();
+                }, 3000);
+            }, 1500);
+        });
+
+        // Simple scroll reveal
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('opacity-100', 'translate-y-0');
+                    entry.target.classList.remove('opacity-0', 'translate-y-10');
+                }
+            });
+        }, { threshold: 0.1 });
+
+        document.querySelectorAll('section, form').forEach(el => {
+            el.classList.add('transition-all', 'duration-700', 'opacity-0', 'translate-y-10');
+            observer.observe(el);
+        });
+    </script>
+</body></html>
